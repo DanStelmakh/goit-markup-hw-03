@@ -1,0 +1,138 @@
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+
+/* Герой */
+.hero-title{
+    color:var(--secondary-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    background-color: var(--background-color-hero-footer);
+    
+}
+.hero{
+    text-align: center;
+    background-color:var(--background-color-hero-footer);
+}
+
+.name-hidden{
+    visibility: hidden;
+}
+
+/* Название секций */
+.section-title{
+    color:var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.section .title{
+    color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+.section .text{
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.section{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+/* преимущества список */
+
+.benefit-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefit-list .item {
+    width: 270px;
+    margin-right: 30px;
+}
+
+.benefit-list .item:nth-child(4n){
+    margin-right: 0px;;
+}
+
+.benefit-list .title{
+    color:var(--title-text-color);
+}
+.benefit-list .text{
+    color: var(--primary-text-color);
+}
+/* наша команда */
+
+.team-list{
+    display: flex;
+}
+.team-list .item +.item{
+    margin-left: 30px;
+}
+.team-list .title{
+    color:var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;  
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.team-list .text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team{
+    background-color: var(--background-secondary);
+}
+
+/* кнопка заказать услугу */
+.button{
+    display: inline-block;
+    min-width: 200px;
+    background-color:var(--primary-button-color) ;
+    color: var(--primary-text-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px ;
+}
+.button.primary{
+background-color: var(--accent-color);
+color: var(--primary-button-color);
+}
+/* Примеры работ */
+
+.example-list{
+    display: flex;
+}
+.example-list .item + .item{
+    margin-left: 30px;
+}
+
+
+/* footer */
