@@ -7,9 +7,11 @@
    
 }
 
-/* head container */
-.head-container{
-    margin-bottom: 94px;
+/* Section */
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Список кнопок */
@@ -73,6 +75,12 @@
 /* card-title */
 
 .card-title{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+
     border-bottom-style: solid;
     border-bottom-color:var(--border-color);
     border-bottom-width: 1px;
@@ -85,10 +93,7 @@
     border-right-color: var(--border-color);
     border-right-width: 1px;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+    
 }
 .card-title .title{
     margin-bottom: 4px;

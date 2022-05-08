@@ -1,4 +1,5 @@
 
+
 .list{
     list-style: none;
     margin: 0;
@@ -10,39 +11,55 @@ img{
 
 /* Герой */
 .hero-title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 696px;
+
     color:var(--secondary-text-color);
+    background-color: var(--background-color-hero-footer);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    background-color: var(--background-color-hero-footer);
-    
 }
+
 .hero{
     text-align: center;
-    background-color:var(--background-color-hero-footer);
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: var(--background-color-hero-footer);
 }
 
 .name-hidden{
     visibility: hidden;
 }
 
+/* Секции кроме героя */
+.features-section, .example-section, .team-section{
+    padding-top: 94px;
+}
+
 /* Название секций */
 .section-title{
+    margin-bottom: 50px;
+
     color:var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
+   
 
 }
 .section .title{
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    
 
 }
 .section .text{
@@ -50,10 +67,7 @@ img{
     line-height: 1.71;
 }
 
-.section{
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
+
 /* преимущества список */
 
 .benefit-list {
@@ -90,25 +104,35 @@ img{
     font-size: 16px;
     line-height: 1.19;  
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 30px;
+
 }
 .team-list .text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-bottom: 30px;
+    
+}
+.team-section{
+    background-color: var(--background-secondary)
 }
 
-.team{
-    background-color: var(--background-secondary);
+.team-card{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+
+
 
 /* кнопка заказать услугу */
 .button{
     display: inline-block;
+    padding: 10px 32px;
     min-width: 200px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    
     background-color:var(--primary-button-color) ;
     color: var(--primary-text-color);
     font-family: inherit;
@@ -116,10 +140,8 @@ img{
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
-    border-radius: 4px;
-    border: 1px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    padding: 10px 32px ;
+    
 }
 .button.primary{
 background-color: var(--accent-color);
@@ -135,4 +157,4 @@ color: var(--primary-button-color);
 }
 
 
-/* footer */
+

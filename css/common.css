@@ -17,6 +17,19 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Container */
 .container {
     margin-left: auto;
@@ -42,13 +55,15 @@ p {
 
 /* Логотип шапка */
 .logo {
+    margin-right: 93px;
+
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-    margin-right: 93px;
+   
 }
 .logo-accent {
     color: var(--title-text-color)
@@ -59,8 +74,11 @@ p {
 }
 
 /* head-container */
-.head-container {
+
+.header{
     border-bottom: 1px solid #ECECEC;
+}
+.head-container {
     display: flex;
     
 }
@@ -105,14 +123,16 @@ p {
 
 
 /* телефон и e-mail */ 
-.main-auth-nav {
-    display: flex;
-    margin-left: auto;
-}
+
 
 .auth-nav{
     display: flex;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
     
+    list-style: none;
 }
 .auth-nav .item + .item{
     margin-left: 50px;
@@ -138,8 +158,14 @@ color: var(--primary-text-color);
     background-color: var(--background-color-hero-footer);
     font-size: 14px;
     line-height: 1.7;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
 }
+.footer .logo{
+    margin-right: 0px;
+}
+
 .logo-caption {
     color: var(--secondary-text-color);
 }
@@ -157,7 +183,7 @@ color: var(--primary-text-color);
 .footer .text{
     color: var(--hero-text-color);
 }
-.adress .text, .adress .link{
+.adress{
     font-style: normal;
 }
 .adress{
@@ -165,7 +191,8 @@ color: var(--primary-text-color);
 }
 .adress .text{
     margin-bottom: 9px;
+    color: var(--secondary-text-color);
 }
-.mail-footer{
+.mail-footer:not(:last-child){
     margin-bottom: 9px;
 }
