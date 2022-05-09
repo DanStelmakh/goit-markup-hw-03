@@ -22,6 +22,7 @@ img{
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 
 .hero{
@@ -37,8 +38,13 @@ img{
 }
 
 /* Секции кроме героя */
-.features-section, .example-section, .team-section{
+.features-section {
     padding-top: 94px;
+}
+.example-section,
+.team-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Название секций */
